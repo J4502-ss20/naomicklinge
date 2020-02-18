@@ -7,38 +7,46 @@
 	<title>	Naomi's first homemade page </title>
 	<meta http-equiv="content-type"
 		content="text/html;charset=utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700|Rokkitt:400,700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
 <body>
 <!--This is a comment. It won't show up in your browser, only in the page source-->
-<span id=top> <h1>The Static Explorer</h1>
-  <h2>Naomi Klinge</h2>
-  <h3>Email: <a href="naomicklinge@gmail.com"> naomicklinge@gmail.com</a></h3>
-  <h3>Twitter: <a href="https://twitter.com/naomicklinge"> naomicklinge</a></h3> </span>
+<div id="container">
+      <h1>The Static Explorer</h1>
+      <h2>Naomi Klinge</h2>
+      <h3>Twitter: <span class="linkstyle"><a href="https://twitter.com/naomicklinge" target="_blank"> naomicklinge</a></span></h3>
+      <h3>Email: <span class="linkstyle"><a href="mailto:naomicklinge@gmail.com" target="_blank"> naomicklinge@gmail.com</a></span></h3>
   <p>What did the Seattle mayor say when he banned straws?</p>
   <p>"Alright everybody, this is the last straw."</p>
-  <p>
+  <p id="headshot">
     <a href="mailto:naomicklinge@gmail.com">
       <img src="img/newphoto.png" height="300px" alt="Naomi Klinge, photo by Danielle Barnum Photography"/>
     </a>
   </p>
-  <p>Photo by Danielle Barnum Photography</p>
-  <a href="https://github.com/J4502-ss20" target="_blank">A link to github </a>
-
-  <p> My work:</p>
-  <ul>
+  <p class="caption">Photo by <span class="italic"> Danielle Barnum Photography</span></p>
+  <p><span class="linkstyle"><a href="https://github.com/J4502-ss20" target="_blank">A link to github </a></span></p>
+  <p>
+    <span class="linkstyle"><a href="oldindex.html" target="_blank"> Link to my site here.</a></span>
+  </p>
+  <h3>My work:</h3>
+  <ul class="list">
     <li>
       <a href="https://naomicklinge.wixsite.com/website/around-the-world" target="_blank">International Journalism</a>
     </li>
-    <li><a href="https://naomicklinge.wixsite.com/website">Political Science</a></li>
+    <li><a href="https://naomicklinge.wixsite.com/website" target="_blank">Political Science</a></li>
     <li><a href="https://naomicklinge.wixsite.com/website/portfolio" target="_blank">Multimedia Production and Design</a></li>
   </ul>
-  <ul>
+  <ul class="list">
     <li><a href="xhtml_template.html" target="_blank">Demo file link to sample site</a></li>
-    <li><a href="index2.html">Link to a second page on my site</a></li>
-    <li><a href="index3.html">Link to a third page on my site</a></li>
+    <li><a href="index2.html" target="_blank">Link to a second page on my site</a></li>
+    <li><a href="index3.html" target="_blank">Link to a third page on my site</a></li>
   </ul>
-
+<p id="footer">Content copyright &copy; 2020 Naomi Klinge.</p>
+</div>
 </body>
 
 </html>
