@@ -28,6 +28,15 @@ h3 {
 	font-family: 'Raleway: 800', Helvetica, sans-serif;
 }
 
+.header {
+	background-color: #EBD172;
+}
+
+.navigation {
+	background-color: #7393FF;
+	color: #fff;
+}
+
 #container {
 	margin: 0 auto;
 	width: 95%;

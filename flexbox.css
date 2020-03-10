@@ -1,0 +1,22 @@
+/* =================================
+  Flexbox
+==================================== */
+
+.header {
+	display: flex;
+}
+
+.navigation {
+	display: flex;
+}
+
+@media (min-width: 600px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.navigation {
+		justify-content: flex-start;
+	}
+}
