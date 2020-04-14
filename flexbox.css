@@ -75,7 +75,7 @@
 		grid-area: f;
 	}
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
 	.header {
 		flex-direction: row;
 	}
@@ -94,7 +94,7 @@
 
 }
 
-@media (min-width: 860px) {
+@media screen and (min-width: 860px) {
 
 	#homestories {
 		display: grid;
@@ -113,7 +113,7 @@
 
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 	#homeelement1 {
 		grid-template-columns: 2fr 3fr 5fr 2fr;
 		grid-template-rows: 40px 1fr 40px;
@@ -145,7 +145,5 @@
 		.homestoryphoto {
 			object-fit: cover;
 		}
-
-
 
 }
