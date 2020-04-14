@@ -4,19 +4,148 @@
 
 .header {
 	display: flex;
+	justify-content: center;
 }
 
 .navigation {
 	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
 }
+
+.item {
+	border-bottom: 1px solid #263F5B;
+}
+
+#homeelement1 {
+	display: grid;
+	grid-template-rows: 20px 730px 1fr 20px;
+}
+
+#homephoto1 {
+	grid-row: 2 / 3;
+}
+
+#hometext1 {
+	grid-row: 3 / 4;
+	max-width: 90%;
+}
+
+#homestories {
+	display: grid;
+	max-width: 90%;
+	grid-gap: 0;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(6, auto);
+	grid-template-areas:
+		"a"
+		"d"
+		"b"
+		"e"
+		"c"
+		"f"
+}
+
+	.homestoryphoto {
+		object-fit: cover;
+	}
+
+	.homestorytext {
+		max-width: 400px;
+		text-align: center;
+		margin: auto;
+	}
+
+	#homestoryphoto1 {
+		grid-area: a;
+	}
+	#homestoryphoto2 {
+		grid-area: b;
+	}
+	#homestoryphoto3 {
+		grid-area: c;
+	}
+	#homestorytext1 {
+		grid-area: d;
+	}
+	#homestorytext2 {
+		grid-area: e;
+	}
+	#homestorytext3 {
+		grid-area: f;
+	}
 
 @media (min-width: 600px) {
 	.header {
 		flex-direction: row;
-		justify-content: space-between;
 	}
 
 	.navigation {
-		justify-content: flex-start;
+		flex-direction: row;
 	}
+
+	.item {
+		border-bottom: none;
+	}
+
+	#hometext1 {
+		width: 100%;
+	}
+
+}
+
+@media (min-width: 860px) {
+
+	#homestories {
+		display: grid;
+		max-width: 90%;
+		grid-template-columns: 30px 1fr 1fr 30px;
+		grid-template-rows: 400px 400px;
+		grid-template-areas:
+			". a d ."
+			". b e ."
+			". c f ."
+		}
+
+		.homestoryphoto {
+			object-fit: cover;
+		}
+
+}
+
+@media (min-width: 1200px) {
+	#homeelement1 {
+		grid-template-columns: 2fr 3fr 5fr 2fr;
+		grid-template-rows: 40px 1fr 40px;
+		margin: auto;
+	}
+
+	#homephoto1 {
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+		object-fit: cover;
+	}
+
+	#hometext1 {
+		grid-column: 3 / 4;
+		grid-row: 2 / 3;
+		object-fit: cover;
+	}
+
+	#homestories {
+		display: grid;
+		max-width: 90%;
+		grid-template-columns: 50px 1fr 1fr 1fr 50px;
+		grid-template-rows: 400px 300px;
+		grid-template-areas:
+			". a b c ."
+			". d e f ."
+	}
+
+		.homestoryphoto {
+			object-fit: cover;
+		}
+
+
+
 }
