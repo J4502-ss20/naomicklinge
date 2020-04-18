@@ -1,4 +1,8 @@
 /*styles go here*/
+.menu-trigger {
+	order: 1;
+	font-size: 1.75em;
+}
 
 p {
 	color: #263F5B;
@@ -40,7 +44,7 @@ h4 {
 	background-color: #263F5B;
 }
 
-.navigation {
+.navigation ul li{
 	background-color: #fff;
 	color: #263F5B;
 	font-family: 'Raleway', Helvetica, sans-serif;

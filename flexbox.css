@@ -7,10 +7,15 @@
 	justify-content: center;
 }
 
-.navigation {
+.navigation ul {
+	display: none;
+}
+
+.navigation ul li {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
+	list-style-type: none;
 }
 
 .item {
@@ -80,9 +85,16 @@
 		flex-direction: row;
 	}
 
-	.navigation {
+	.navigation ul {
 		flex-direction: row;
+		display: flex;
+		justify-content: space-around;
+		list-style-type: none;
 	}
+
+.menu-trigger {
+	display: none;
+}
 
 	.item {
 		border-bottom: none;
