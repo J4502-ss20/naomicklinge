@@ -112,7 +112,7 @@
 		display: grid;
 		max-width: 90%;
 		grid-template-columns: 30px 1fr 1fr 30px;
-		grid-template-rows: 400px 400px;
+		grid-template-rows: repeat(3, 400px);
 		grid-template-areas:
 			". a d ."
 			". b e ."
